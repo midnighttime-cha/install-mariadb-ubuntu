@@ -24,7 +24,7 @@ mysql -u root
 ```
 
 ```sql
-CREATE USER ‘admin'@'localhost' IDENTIFIED BY Test12345;
+CREATE USER admin@localhost IDENTIFIED BY Test12345;
 GRANT ALL PRIVILEGES ON *.* TO admin@localhost WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 ```
