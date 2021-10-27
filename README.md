@@ -18,3 +18,13 @@ Disallow root login remotely? [Y/n] <— y
 Reload privilege tables now? [Y/n] <— y
 mysql -u root -p >> Test Login Mysql root 
 ```
+
+```bash
+mysql -u root
+```
+
+```sql
+CREATE USER ‘admin'@'localhost' IDENTIFIED BY Test12345;
+GRANT ALL PRIVILEGES ON *.* TO admin@localhost WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+```
